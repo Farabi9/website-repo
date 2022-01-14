@@ -88,3 +88,28 @@ hr{
     text-decoration: none;
     line-height: 24px;
 }
+/* courses style  */
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+#title-3{
+    padding-top: 23px;
+    padding-left: 30px;
+    color: blue;
+    
+}
+.fa-star.filled{
+
+    color: #FFC014;
+    Width: 12.25px;
+ Height: 11.75px;
+ padding: 3.24px;
+}
+.fa-star.empty{
+
+    color: #AEAEAE;
+    Width: 12.39px;
+Height: 11.81px;
+padding: 3.24px;
+}
