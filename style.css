@@ -4,6 +4,9 @@
 /* common styles */
 .container{
     background-color: #ffff;
+    margin-top: 21px;
+    border-radius: 5px;
+    
     
 }
 .top-players{
@@ -18,6 +21,7 @@
 .color{
     color: blue;
     margin-top: 3px;
+    padding-left: 30px;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -44,9 +48,43 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    padding: 50px;
 }
 hr{
     border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
  
+}
+
+/* top blogs styles */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+.blog{
+    display: flex;
+}
+.blog .thumnail img{
+    height: 177px;
+    width: 177px;
+    padding-left:30px ;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+
+}
+.blog-author{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.blog-author a{
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 24px;
 }
