@@ -21,7 +21,7 @@
 .color{
     color: blue;
     margin-top: 3px;
-    padding-left: 30px;
+    
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -64,6 +64,10 @@ hr{
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 26px;
 }
+.colors{
+    color: blue;
+    padding-left: 30px;
+}
 .blog{
     display: flex;
 }
@@ -88,10 +92,19 @@ hr{
     text-decoration: none;
     line-height: 24px;
 }
-/* courses style  */
+/*-------------------------- courses style 
+-------------------------- */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    padding-left: 30px;
+  
+}
 .course .course-banner img{
     width: 224px;
     height: 104px;
+    
 }
 #title-3{
     padding-top: 23px;
@@ -112,4 +125,42 @@ hr{
     Width: 12.39px;
 Height: 11.81px;
 padding: 3.24px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Media query_____------------------------------------
+-------------------- */
+/* Mobile devices-----------------------------------------
+----------- */
+@media only screen and (max-width:689px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+    
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        
+        align-items: center;
+    }
+    .blogs, .courses{
+    
+        grid-template-columns: repeat(1, 1fr);
+        }
+       
+}
+@media only screen and (min-width:689px) and (max-width: 992px) {
+
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
